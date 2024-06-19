@@ -14,12 +14,12 @@ mongoose.connect('mongodb+srv://praveen123:praveen123@cluster0.7oueg4l.mongodb.n
         console.error('DB connection error:', error);
     });
 
-const userSchema = new mongoose.Schema({
+const replaceschema = new mongoose.Schema({
     username: String,
     password: String
 });
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', replaceschema);
 
 const todoSchema = new mongoose.Schema({
     userId: mongoose.Types.ObjectId,
